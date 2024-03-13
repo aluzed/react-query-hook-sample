@@ -10,9 +10,10 @@ function App() {
   return (
     <div className="App flex justify-center flex-wrap">
       {isFetching && "Getting posts..."}
-      {posts?.map((post: Post) => {
-        return <PostCard key={post.id} post={post} />;
-      })}
+      {!isFetching &&
+        posts?.map((post: Post) => {
+          return <PostCard key={post.id} post={post} />;
+        })}
     </div>
   );
 }
