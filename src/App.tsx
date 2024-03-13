@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { useGetPost } from "./hooks/useGetPosts";
+import { useGetPost } from "./hooks/posts";
 import { PostCard } from "./components/post";
 import { Post } from "./custom-types/post";
 
